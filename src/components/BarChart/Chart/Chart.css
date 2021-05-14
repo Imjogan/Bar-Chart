@@ -23,6 +23,7 @@
 .chart__column {
   margin: 0;
   width: 100%;
+  transition: height 1s ease;
 }
 
 @media screen and (max-width: 768px) {

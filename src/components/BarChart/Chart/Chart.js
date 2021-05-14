@@ -1,14 +1,26 @@
 import './Chart.css';
+import { useState, useEffect} from 'react';
 
 function Chart({ dataForChart }) {
-  const styleOnChart = {
-    height: `${dataForChart.value}px`,
-    backgroundColor: `${dataForChart.color}`,
-  };
+  const [styleOnChart, setStyleOnChart] = useState({
+    height: `0px`,
+    backgroundColor: `black`,
+  });
+  const [styleOnValue, setStyleOnValue] = useState({
+    color: `black`,
+  });
 
-  const styleOnValue = {
-    color: `${dataForChart.color}`,
-  };
+  useEffect(() => {
+    if (dataForChart) {
+      setStyleOnChart({
+        height: `${dataForChart.value}px`,
+        backgroundColor: `${dataForChart.color}`,
+      })
+      setStyleOnValue({
+        color: `${dataForChart.color}`,
+      })
+    }
+  }, [])
 
   return (
     <section className="chart">
