@@ -7,6 +7,10 @@
   margin-right: 15px;
 }
 
+.chart:hover {
+  opacity: .6;
+}
+
 .chart:last-of-type {
   margin: 0;
 }
