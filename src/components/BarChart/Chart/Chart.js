@@ -10,7 +10,6 @@ function Chart({ dataForChart }) {
     color: `${dataForChart.color}`,
   };
 
-  console.log(styleOnChart);
   return (
     <section className="chart">
       <h2 style={styleOnValue} className="chart__value">
