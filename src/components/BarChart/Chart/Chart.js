@@ -1,5 +1,5 @@
 import './Chart.css';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 function Chart({ dataForChart }) {
   const [styleOnChart, setStyleOnChart] = useState({
@@ -15,12 +15,12 @@ function Chart({ dataForChart }) {
       setStyleOnChart({
         height: `${dataForChart.value}px`,
         backgroundColor: `${dataForChart.color}`,
-      })
+      });
       setStyleOnValue({
         color: `${dataForChart.color}`,
-      })
+      });
     }
-  }, [])
+  }, []);
 
   return (
     <section className="chart">
