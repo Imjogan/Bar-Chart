@@ -1,5 +1,5 @@
 import './App.css';
-import BarChart from '../BarChart/BarChart';
+import { BarChart } from '../BarChart/BarChart';
 import { initialDataFirst, initialDataSecond } from '../../utils/initialData';
 
 function App() {

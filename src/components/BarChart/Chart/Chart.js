@@ -1,7 +1,7 @@
 import './Chart.css';
 import { useState, useEffect } from 'react';
 
-function Chart({ dataForChart }) {
+export const Chart = ({ dataForChart }) => {
   const [styleOnChart, setStyleOnChart] = useState({
     height: `0px`,
     backgroundColor: `black`,
@@ -20,7 +20,7 @@ function Chart({ dataForChart }) {
         color: `${dataForChart.color}`,
       });
     }
-  }, []);
+  }, [dataForChart]);
 
   return (
     <section className="chart">
@@ -30,6 +30,4 @@ function Chart({ dataForChart }) {
       <div style={styleOnChart} className="chart__column" />
     </section>
   );
-}
-
-export default Chart;
+};

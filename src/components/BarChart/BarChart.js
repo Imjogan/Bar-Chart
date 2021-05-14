@@ -1,22 +1,22 @@
 import './BarChart.css';
-import Chart from './Chart/Chart';
+import { Chart } from './Chart/Chart';
 import { useState, useEffect } from 'react';
 
-function BarChart({ data }) {
+export const BarChart = ({ data }) => {
   const [styleOnBarChart, setStyleOnBarChart] = useState({
     height: `0px`,
   });
 
   useEffect(() => {
     if (data) {
-      const maxValueElement = data.reduce((acc, curr) =>
+      const maxValue = data.reduce((acc, curr) =>
         acc.value > curr.value ? acc : curr
-      );
+      ).value;
       setStyleOnBarChart({
-        height: `${maxValueElement.value + 40}px`,
+        height: `${maxValue + 40}px`,
       });
     }
-  }, []);
+  }, [data]);
 
   return (
     <section style={styleOnBarChart} className="bar-chart">
@@ -25,6 +25,4 @@ function BarChart({ data }) {
       ))}
     </section>
   );
-}
-
-export default BarChart;
+};
