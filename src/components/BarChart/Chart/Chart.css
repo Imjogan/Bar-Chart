@@ -20,3 +20,19 @@
   margin: 0;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .chart__value {
+    font-size: 18px;
+  }
+
+  .chart {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .chart__value {
+    font-size: 14px;
+  }
+}
