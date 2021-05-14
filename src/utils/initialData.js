@@ -16,10 +16,6 @@ export const initialDataSecond = [
   { value: 69, color: '#9370DB' },
   { value: 109, color: '#FF6347' },
   { value: 300, color: '#6495ED' },
-  { value: 305, color: '#ADD8E6' },
-  { value: 252, color: '#F2484C' },
-  { value: 355, color: '#40E0D0' },
-  { value: 299, color: '#B8860B' },
   { value: 144, color: '#2F4F4F' },
   { value: 79, color: '#808080' },
 ];

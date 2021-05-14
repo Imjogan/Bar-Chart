@@ -7,8 +7,6 @@ function App() {
     <section className="app">
       <div className="app__conditional-container">
         <BarChart data={initialDataFirst} />
-      </div>
-      <div className="app__conditional-container">
         <BarChart data={initialDataSecond} />
       </div>
     </section>

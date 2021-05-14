@@ -5,8 +5,11 @@
 }
 
 .app__conditional-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   margin-bottom: 20px;
 }
 
